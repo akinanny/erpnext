@@ -1,0 +1,7 @@
+kubectl -n erpnext2  exec -it erpext2-erpnext-gunicorn-6d7c56bc4-l2bkf -- bash
+ls sites/
+bench new-site 95.177.173.127
+bench --site 95.177.173.127 install-app erpnext
+echo "95.177.173.127" >> sites/sites.txt
+bench restart
+
