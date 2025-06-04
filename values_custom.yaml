@@ -1,0 +1,18 @@
+ingress:
+  enabled: false
+persistence:
+  logs:
+    enabled: true
+    size: 2Gi
+    storageClassName: nfs-sc
+  worker:
+    enabled: true
+    size: 8Gi
+    storageClassName: nfs-sc
+service:
+  nodePort:
+    gunicorn: 32090
+    nginx: 32092
+    socketio: 32091
+  type: NodePort
+
