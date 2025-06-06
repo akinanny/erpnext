@@ -1,3 +1,5 @@
+image repo: ghcr.io/akinanny/erpnext_hrms_payments:v15
+
 kubectl -n erpnext2  exec -it erpext2-erpnext-gunicorn-6d7c56bc4-l2bkf -- bash
 ls sites/
 bench new-site 95.177.173.127
