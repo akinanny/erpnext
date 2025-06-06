@@ -12,7 +12,8 @@
 # dbExistingSecretPasswordKey: "password"
 
 image:
-  repository: 89neuron/erpnext_hrms_payments
+  #repository: 89neuron/erpnext_hrms_payments
+  repository: ghcr.io/akinanny/erpnext_hrms_payments
   tag: v15
   pullPolicy: IfNotPresent
 
