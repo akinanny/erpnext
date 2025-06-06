@@ -7,6 +7,7 @@ bench --site 95.177.173.127 install-app erpnext
 echo "95.177.173.127" >> sites/sites.txt
 bench restart
 
+#mysql pass: changeit
 
 
 #install HR
