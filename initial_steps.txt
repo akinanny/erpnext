@@ -5,3 +5,13 @@ bench --site 95.177.173.127 install-app erpnext
 echo "95.177.173.127" >> sites/sites.txt
 bench restart
 
+
+
+#install HR
+echo "hrms" >> /home/frappe/frappe-bench/sites/apps.txt
+bench --site 95.177.173.127 install-app hrms
+bench build --app hrms
+bench clear-cache
+bench restart
+bench --site 95.177.173.127 console
+frappe.get_installed_apps()
